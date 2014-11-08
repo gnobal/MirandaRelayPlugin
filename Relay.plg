@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Relay Plugin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Release/Relay.res" /d "NDEBUG" "C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\Relay.rc"" 
+Creating temporary file "C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP5B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Miranda\Miranda-IM" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RELAY_EXPORTS" /Fp"Release/Relay.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\CommandDB.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\CommandHandlers.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\Common.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\ContactDB.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\Options.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\ProtocolDB.cpp"
+"C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\Relay.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP5B.tmp" 
+Creating temporary file "C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP5C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/Relay.pdb" /machine:I386 /out:"Release/Relay.dll" /implib:"Release/Relay.lib" 
+".\Release\CommandDB.obj"
+".\Release\CommandHandlers.obj"
+".\Release\Common.obj"
+".\Release\ContactDB.obj"
+".\Release\Options.obj"
+".\Release\ProtocolDB.obj"
+".\Release\Relay.obj"
+".\Release\Relay.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP5C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CommandDB.cpp
+CommandHandlers.cpp
+Common.cpp
+ContactDB.cpp
+Options.cpp
+ProtocolDB.cpp
+Relay.cpp
+Linking...
+   Creating library Release/Relay.lib and object Release/Relay.exp
+Creating temporary file "C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP60.bat" with contents
+[
+@echo off
+xcopy /y /f .\Release\Relay.dll "C:\Program Files\Miranda IM\Plugins"
+]
+Creating command line "C:\DOCUME~1\Amit\LOCALS~1\Temp\RSP60.bat"
+
+C:\Documents and Settings\Amit\My Documents\Dev\Miranda\Relay\Release\Relay.dll -> C:\Program Files\Miranda IM\Plugins\Relay.dll
+Sharing violation
+Error executing c:\windows\system32\cmd.exe.
+
+
+
+<h3>Results</h3>
+Relay.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
